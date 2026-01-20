@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* Layout specifico per la griglia di fumetti */
+.comics {
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    gap: 20px;
+    justify-content: center;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.comic {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 190px;
+    box-sizing: border-box;
+    height: 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comic img {
+    flex-grow: 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    min-height: 0;
+}
+
+
+.comic h3 {
+    font-size: 1em;
+    margin: 10px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Nuovo contenitore per prezzo e bottone */
+.comic-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.add-to-cart-form {
+    margin: 0;
+}
+
+.add-to-cart {
+    background-color: yellow;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+#cart-message {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: yellow;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    max-width: 220px;
+    text-align: center;
+}

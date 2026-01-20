@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+/* Impostazione globale */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header Admin */
+header {
+    background-color: #e60000;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: yellow;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    user-select: none;
+}
+
+.admin-links {
+    display: flex;
+    align-items: center;
+}
+
+.admin-link {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.admin-link:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Titolo benvenuto */
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: red;
+    font-size: 36px;
+}
+
+/* Navigation Admin */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+nav ul li a {
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px yellow;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Contenitore pagina */
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulsanti comuni */
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px yellow;
+}
+
+button:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Immagine di benvenuto */
+.admin-image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-image-container img {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+/* Griglia catalogo */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.catalog-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+.catalog-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.catalog-item p {
+    font-weight: bold;
+    color: #e60000;
+    margin-bottom: 15px;
+}
+
+/* Bottoni azione */
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-button {
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px;
+    text-decoration: none;
+    display: inline-block;
+    
+    margin: 0 6px;
+}
+
+.action-button:hover {
+    background: linear-gradient(#003366, red, #003366);
+    transform: scale(1.05);
+    color: white;
+}
+
+.add-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px yellow;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.add-button:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Contenitore tabella */
+.catalog-table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.catalog-table {
+    border-collapse: collapse;
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-table th, .catalog-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.catalog-table th {
+    background-color: red;
+    color: white;
+}
+
+.catalog-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.catalog-table tr:hover {
+    background-color: #ffe6e6;
+}
+
+/* Contenitore bottoni extra */
+.button-container {
+    text-align: left;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Form Modifica Fumetto */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-container form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-container form button {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.form-container a.cancel-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container a.cancel-link:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: fit-content;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.5s ease-out;
+}
+
+
+
+

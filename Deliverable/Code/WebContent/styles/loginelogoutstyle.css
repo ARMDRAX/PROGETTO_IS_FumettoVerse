@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.login-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #e60000;
+  outline: none;
+}
+
+.login-form input[type="submit"],
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e60000;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form button:hover {
+  background-color: #b30000;
+}
+
+.login-form p.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form p.register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form p.register-link a {
+  color: #e60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form p.register-link a:hover {
+  text-decoration: underline;
+}
+
+#errorMessages {
+	max-width: 400px; 
+	margin: 10px auto;
+}
+
+#idh2 {text-align:center; 
+color: #e60000; 
+margin-top: 30px;}

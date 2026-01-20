@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* Impostazioni globali */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header rosso */
+header {
+  background-color: #e60000;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: yellow;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  user-select: none;
+}
+
+/* Link utente */
+.user-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  background-color: yellow;
+  color: red;
+}
+
+.welcome-text {
+  margin-right: 10px;
+  font-weight: bold;
+  user-select: none;
+  cursor: default;
+}
+
+/* Navbar blu */
+.nav-bar {
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #0055aa;
+}
+
+/* Container comune */
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Titoli */
+.container h2,
+h2.container,
+h2 {
+  color: red;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Messaggio carrello */
+#cart-message {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: yellow;
+  color: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: none;
+  z-index: 9999;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  max-width: 220px;
+  text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;   /* spinge il contenuto verso destra */
+    padding: 10px 40px;          /* spazio interno dai bordi */
+}
+
+
+

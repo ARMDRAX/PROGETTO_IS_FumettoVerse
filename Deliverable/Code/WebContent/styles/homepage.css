@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-section img {
+  width: 90%;
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+/* -------------------- TITOLO SEZIONE -------------------- */
+.consigliati-title {
+  text-align: center;
+  color: red;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* -------------------- GRIGLIA FUMETTI -------------------- */
+.comics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -------------------- CARD FUMETTO -------------------- */
+.comic {
+  width: 220px;
+  height: 450px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comic img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  border-radius: 5px 5px 0 0;
+}
+
+.comic h3 {
+  font-size: 1em;
+  margin: 10px 0;
+  line-height: 1.2;
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.comic-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* -------------------- BOTTONE HOMEPAGE -------------------- */
+.index-page .add-to-cart {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 5px 15px yellow;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.index-page .add-to-cart:hover {
+  background: linear-gradient(135deg, red, #003366);
+  transform: scale(1.05);
+}
+

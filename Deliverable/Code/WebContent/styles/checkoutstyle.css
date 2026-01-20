@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* Checkout page specific layout */
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.container h3 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #e60000;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: #b30000;
+}
+
+.thankyou-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff8f8;
+  border: 2px solid #e60000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(230,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+.thankyou-container h1 {
+  color: #e60000;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.thankyou-container p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.thankyou-container a.home-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #e60000;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.thankyou-container a.home-btn:hover {
+  background-color: #b30000;
+}
+.no-orders-message {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 600px;
+    color: #555;
+}
+
+.no-orders-message img {
+    width: 560px;
+    max-width: 90%;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.no-orders-message h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.no-orders-message p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #004c99;
+}

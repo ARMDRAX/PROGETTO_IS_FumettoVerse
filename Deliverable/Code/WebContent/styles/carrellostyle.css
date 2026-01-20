@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* Container principale del carrello */
+.cart-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cart-container h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Ogni fumetto nel carrello in orizzontale */
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Immagine del fumetto */
+.cart-item img {
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Info accanto all’immagine */
+.cart-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-info h3 {
+    margin: 0 0 10px;
+    color: red;
+    font-size: 22px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Sezione con quantità e bottoni affiancati */
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Input quantità */
+.quantity-input {
+    width: 60px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Bottoni carrello */
+.update-btn,
+.remove-btn,
+.checkout-btn,
+.clear-cart-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-btn:hover,
+.remove-btn:hover,
+.checkout-btn:hover,
+.clear-cart-btn:hover {
+    background-color: #cc0000;
+    transform: scale(1.03);
+}
+
+/* Totale */
+.cart-total {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Bottoni sotto al carrello */
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.empty-cart-message {
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+}
+
+.empty-cart-message h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.empty-cart-message p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #004c99;
+}
+
+.empty-cart-message img {
+    width: 500px; /* aumentato da 120px */
+    max-width: 90%;
+    margin-bottom: 20px;
+}
